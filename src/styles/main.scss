@@ -5,8 +5,31 @@
 }
 
 $bgColor: #fff;
-$mainColor: #1D1D1DB3;
+$mainTextColor: #1D1D1DB3;
 
 body {
     background-color: $bgColor;
+}
+
+@mixin title($fontSize: 24px) {
+    font-size: $fontSize;
+    color: $mainTextColor;
+}
+
+@mixin text {
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+    color: $mainTextColor;
+}
+
+.title--big {
+    @include title(40px);
+}
+
+.title {
+    @include title;
+}
+
+.text {
+    @include text;
 }
