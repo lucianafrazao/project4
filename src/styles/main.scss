@@ -1,26 +1,52 @@
+@use 'hero';
+@use 'variables';
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-$bgColor: #fff;
-$mainTextColor: #1D1D1DB3;
+.rajdhani-medium {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.rajdhani-semibold {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.rajdhani-bold {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
 
 body {
-    background-color: $bgColor;
+    background-color: variables.$bgColor;
 }
 
-@mixin title($fontSize: 24px) {
+.body--text {
+    justify-content: center;
+    margin: 80px;
+}
+
+@mixin title($fontSize: 40px) {
     font-size: $fontSize;
-    color: $mainTextColor;
+    color: variables.$mainTextColor;
+    text-align: center;
+    padding-top: 24px;
 }
 
-@mixin text {
+@mixin text($fontSize: 24px) {
     font-size: $fontSize;
     line-height: $fontSize + 10px;
-    color: $mainTextColor;
+    color: variables.$mainTextColor;
 }
+
 
 .title--big {
     @include title(40px);
@@ -32,4 +58,26 @@ body {
 
 .text {
     @include text;
+    text-align: center;
+}
+
+.text--font {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.title--font {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 16px;
+}
+
+.trailers {
+    //show imgs side by side
+}
+
+.characters {
+    //everything
 }
