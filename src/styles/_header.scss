@@ -1,0 +1,43 @@
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: white;
+    transition: background-color 1s ease;
+
+    &--is-hidden {
+        background-color: transparent;
+        transition: background-color 1s ease;
+
+        .header {
+            &__logo, &__links__item {
+                opacity: 0;
+                visibility: hidden;
+                transition: opacity 1s ease;
+            }
+        }
+    }
+
+    &__container {
+        padding: 32px 36px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        max-width: 160px;
+        width: 100%;
+        padding-top: 7px;
+        transition: opacity 1s ease;
+    }
+
+    &__links {
+        display: flex;
+
+        &__item {
+            list-style: none;
+            text-transform: uppercase;
+            transition: opacity 1s ease;
+        }
+    }
+}

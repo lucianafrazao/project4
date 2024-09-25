@@ -11,9 +11,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header class="header">
+        <div class="header__container">
+            <h1>
+                <img class="header__logo" src="./dist/images/logos/header-pixar.jpg" alt="Pixar">
+            </h1>
+            <ul class="header__links">
+                <li class="header__links__item">
+                    <a href="#film" class="title--small title--font">sinopse</a>
+                </li>
+                <li class="header__links__item">
+                    <a href="#trailers" class="title--small title--font">Trailers</a>
+                </li>
+                <li class="header__links__item">
+                    <a href="#characters" class="title--small title--font">Characters</a>
+                </li>
+            </ul>
+        </div>
+    </header>
     <section class="hero">
     </section>
-    <section class="body--text">
+    <section class="body--text" id="film">
         <div class="title title--font">Growing Up Can Be A Bumpy Road…</div>
         <p class="text text--font">and it is no exception for Riley, who is uprooted from her Midwest life when her father starts a new job 
             in San Francisco. Like all of us, Riley is guided by her emotions – Joy, Fear, Anger, Disgust and Sadness. 
@@ -22,25 +40,93 @@
             in Headquarters. Although Joy, Riley’s main and most important emotion, tries to keep things positive, 
             the emotions conflict on how best to navigate a new city, house and school.</p>
     </section>
-    <section>
-        <div class="title title--font">Trailers</div>
-        <div class="trailers">
-            <div>
+    <section class="trailers" id="trailers">
+        <div class="title title--font sections">Trailers</div>
+        <ul class="trailers__list">
+            <li class="trailers__list__item">
                 <a href="https://www.youtube.com/watch?v=1t0A_tZGrYw">
                     <img src="./dist/images/body/io-trailer2.jpg" alt="Teaser">
                 </a>
-            </div>
-            <div>
+            </li>
+            <li class="trailers__list__item">
                 <a href="https://www.youtube.com/watch?v=yRUAzGQ3nSY">
                     <img src="./dist/images/body/io-trailer1.jpg" alt="Trailer">
                 </a>
-            </div>
+            </li>
+        </ul>
+    </section>
+    <section class="characters" id="characters">
+        <div class="title title--font sections">The characters</div>
+        <ul class="characters__list">
+            <li class="characters__list__item">
+                <img src="./dist/images/characters/io_joy1.jpg" alt="Joy">
+            </li>
+            <li class="characters__list__item">
+                <h1 class="title title--font">Joy</h1>
+                <p class="text text--font">Joy’s goal has always been to make sure Riley stays happy. 
+                    She is lighthearted, optimistic and determined to find the fun in every situation. 
+                    Joy sees challenges in Riley’s life as opportunities, and the less happy moments 
+                    as hiccups on the way back to something great. As long as Riley is happy, so is Joy.</p>
+            </li>
+            <li class="characters__list__item">
+                <h1 class="title title--font">Sadness</h1>
+                <p class="text text--font">None of the other Emotions really understand what Sadness’s role is. 
+                    Sadness would love to be more optimistic and helpful in keeping Riley happy, but she finds it 
+                    so hard to be positive. Sometimes it seems like the best thing to do is just lie on the floor 
+                    and have a good cry.</p>
+            </li>
+            <li class="characters__list__item">
+                <img src="./dist/images/characters/io_sad1.jpg" alt="Sadness">
+            </li>
+            <li class="characters__list__item">
+                <img src="./dist/images/characters/io_anger1.jpg" alt="Anger">
+            </li>
+            <li class="characters__list__item">
+                <h1 class="title title--font">Anger</h1>
+                <p class="text text--font">Anger feels very passionately about making sure things are fair for Riley. 
+                    He has a fiery spirit and tends to explode (literally) when things don’t go as planned. 
+                    He is quick to overreact and has little patience for life’s imperfections.</p>
+            </li>
+            <li class="characters__list__item">
+                <h1 class="title title--font">Disgust</h1>
+                <p class="text text--font">Disgust is highly opinionated, extremely honest and prevents Riley 
+                    from getting poisoned – both physically and socially. She keeps a careful eye on the people, 
+                    places and things that Riley comes into contact with – broccoli or fashion trends. 
+                    Disgust always has the best of intentions and refuses to lower her standards.</p>
+            </li>
+            <li class="characters__list__item">
+                <img src="./dist/images/characters/io_disgust1.jpg" alt="Disgust">
+            </li>
+            <li class="characters__list__item">
+                <img src="./dist/images/characters/io_fear1.jpg" alt="Fear">
+            </li>
+            <li class="characters__list__item">
+                <h1 class="title title--font">Fear</h1>
+                <p class="text text--font">Fear’s main job is to protect Riley and keep her safe. 
+                    He is constantly on the lookout for potential disasters, and spends time evaluating 
+                    the possible dangers, pitfalls and risk involved in Riley’s everyday activities. 
+                    There are very few activities and events that Fear does not find to be dangerous and possibly fatal.</p>
+            </li>
+            <li class="characters__list__item">
+                <h1 class="title title--font">Riley</h1>
+                <p class="text text--font">Riley Andersen is an eternally happy kid, at least until she turns eleven 
+                    and her dad gets a job across the country, forcing the family to relocate to San Francisco. 
+                    As she struggles to navigate a new home and school, Riley experiences an unfamiliar mix of emotions.</p>
+            </li>
+            <li class="characters__list__item">
+                <img src="./dist/images/characters/io_riley1.jpg" alt="Disgust">
+            </li>
+        </ul>
+        <div class="img">
+            <img src="./dist/images/body/io_characters-design.jpg" alt="Characters">
         </div>
     </section>
-    <section>
-        <div class="characters">
-            <div class="title title--font">The characters</div>
+    <footer class="footer">
+        <div class="footer__container">
+            <img src="./dist/images/logos/header-pixar.jpg" alt="Pixar">
+            <h5 class="text--small text--font">© 1986-2024 Disney-Pixar</h5>
         </div>
-    </section>
+    </footer>
+    <script src="/src/main.js"></script>
 </body>
 </html>
