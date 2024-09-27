@@ -1,6 +1,17 @@
 .hero {
-    padding-top: 5.6vw;
-    min-height: 130vh;
+    width: 100%;
+    min-height: 103vh;
     background-image: url(../../dist/images/body/io_hero.jpg);
     background-size: cover;  
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    @media (max-width: 768px) {
+        min-height: 25vh;
+    }
+
+    @media (max-width: 1023px) {
+        min-height: 40vh;
+    }
 }

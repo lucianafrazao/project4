@@ -6,6 +6,11 @@
         grid-template-columns: 1fr 1fr;
         gap: 24px;
         list-style: none;
+        align-items: center;
+
+        @media (max-width: 768px) {
+            display: block;
+        }
 
         &__item {
             img {

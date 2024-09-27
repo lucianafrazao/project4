@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
     const heroSection = document.querySelector('.hero');
-    const alturaHero = heroSection.clientHeight;
+    const heroHeight = heroSection.clientHeight;
 
     window.addEventListener('scroll', function() {
-        const posicaoAtual = this.window.scrollY;
+        const currentPosition = this.window.scrollY;
 
-        if (posicaoAtual < alturaHero) {
+        if (currentPosition < heroHeight) {
             hideHeaderElements();
         } else {
             showHeaderElements()

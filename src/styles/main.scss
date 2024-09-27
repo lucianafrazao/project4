@@ -10,24 +10,6 @@
     box-sizing: border-box;
 }
 
-.rajdhani-medium {
-    font-family: "Rajdhani", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-}
-
-.rajdhani-semibold {
-    font-family: "Rajdhani", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-}
-
-.rajdhani-bold {
-    font-family: "Rajdhani", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-}
-
 body {
     background-color: variables.$bgColor;
 }
@@ -52,10 +34,17 @@ body {
 
 .title--small {
     @include title(32px);
+    @media (max-width: 768px) {
+        @include title(24px);
+    }
 }
 
 .title {
     @include title;
+
+    @media (max-width: 768px) {
+        @include title(32px);
+    }
 }
 
 .text {
