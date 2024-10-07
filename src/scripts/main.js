@@ -5,13 +5,15 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', function() {
         const currentPosition = this.window.scrollY;
 
-        if (currentPosition < heroHeight) {
+        if (currentPosition <= heroHeight && currentPosition === 0) {
+            showHeaderElements();
+        } else if (currentPosition < heroHeight) {
             hideHeaderElements();
         } else {
-            showHeaderElements()
+            showHeaderElements();
         }
-    })
-})
+    });
+});
 
 function hideHeaderElements() {
     const header = document.querySelector('header');
